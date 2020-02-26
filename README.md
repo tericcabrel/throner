@@ -7,7 +7,7 @@ I work on this project with a friend. He built a drone using Raspberry Pi 3 Mode
 * Camera Module of 5Mpx connected to Raspberry Pi via USB port
 * GPS Module to retrieve GPS coordinates at specific time
 * Portable battery to have possibility to use it without required to plug on alimentation. The battery has a lifetime of 15 minutes.
-* Six servo motor to have possibility to fly
+* Six servo motors to have possibility to fly
 * A controller to control the drone by sending command to execute a specific action. The controller use radio frequence to send the commands.
 
 He alse wanted to control the drone remotely through a web interface but he didn't know a lot in programming so i join him to implement this part. We was really proud of the result at the end. 
@@ -32,13 +32,15 @@ From the web interface, we will able to do the following action:
 ## Projects
 I used 4 projects make all these features work. I will list them below and describe the role.
 
-* **Thoner IOT:** Node.js app hosted in Raspberry Pi who communicates with client web application
+* **Thoner IOT:** Node.js app hosted in Raspberry Pi who communicates with client web application<br>Link: [https://github.com/tericcabrel/throner-iot](https://github.com/tericcabrel/throner-iot)
 
-* **Throner API:** REST API with Node.js and MongoDB to manage data for Throner project 
 
-* **Throner WEB:** Web application built with React and CoreUI who allows to control a drone 
+* **Throner API:** REST API with Node.js and MongoDB to manage data for Throner project<br>Link: [https://github.com/tericcabrel/throner-api](https://github.com/tericcabrel/throner-api)
 
-* **Throner Dispatcher:** Dispatch request between throner-api, throner-iot and throner-web 
+* **Throner WEB:** Web application built with React and CoreUI who allows to control a drone<br>Link: [https://github.com/tericcabrel/throner-web](https://github.com/tericcabrel/throner-web)
+
+* **Throner Dispatcher:** Dispatch request between throner-api, throner-iot and throner-web<br>Link: [https://github.com/tericcabrel/throner-dispatcher](https://github.com/tericcabrel/throner-dispatcher)
 
 
 ## Screenshots
+![UI Controller picture](./controller-ui.png)
